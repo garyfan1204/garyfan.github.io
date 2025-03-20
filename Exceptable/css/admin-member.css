@@ -1,0 +1,191 @@
+#wrap {
+    background-color: #f4eee2;
+    width: 60%;
+    height: 80%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#search {
+    width: 40%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-25%,25%);
+}
+
+input[type = "search"] {
+    width: calc(100% - 30px);
+    height: 100%;
+    border: none;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+#searchbtn, .add {
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+
+#searchbtn {
+    padding-left: 10px;
+}
+
+#container {
+    width: 95%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: end;
+}
+
+.bar {
+    background-color: #ffe785;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 0 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#choosetodel {
+    width: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input{
+        width: 20px;
+    }
+
+    #delete {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items:center;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.sort {
+    background-color: #ffe785;
+    width: 100%;
+    height: 40px;
+    border-radius:10px;
+    display: flex;
+    > * {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+    .gender, .time {
+        &::after {
+            content: '';
+            border: 5px solid;
+            border-color: #c9c9c9 transparent transparent;
+            transform: translate(10px,25%);
+        }
+    }
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#items {
+    width: 100%;
+    height: calc(95% - 100px);
+    text-align: center;
+    border-collapse: collapse;
+    tr {
+        height: 15%;
+        &:first-of-type td {
+            border-top: none;
+        }
+        
+        &:last-of-type td {
+            border-bottom: none;
+        }
+    }
+    
+    td {
+        border: 1px dashed #000;
+        border-left: none;
+        border-right: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+#edituser {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.pages {
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8px;
+    a {
+        color: #16435f;
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+        &:hover {
+            color: #f0f0f0;
+        }
+    }
+}
+
+input[type = "checkbox"] {
+    width: 100%;
+}
+
+.check, .gender {
+    width: 10%;
+}
+
+.name {
+    width: 15%;
+}
+
+.time{
+    width: 20%;
+}
+
+.account{
+    width: 35%;
+}
+
+.edit img{
+    width: 10%;
+}

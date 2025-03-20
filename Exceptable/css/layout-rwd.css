@@ -1,0 +1,23 @@
+@media screen and (max-width: 846px) {
+    
+}
+
+@media screen and (max-width: 845px) and (min-width: 471px) {
+    header {
+        font-size: 2vw;
+    }
+
+    #login, #userinfo {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    header > ul, .login, .userinfo {
+        display: none;
+    }
+
+    footer a {
+        display: block;
+    }
+}
